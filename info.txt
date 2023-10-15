@@ -1,0 +1,258 @@
+End point 1:
+http://localhost:9000/roomlist/all
+
+Result : {
+    "data": [
+        {
+            "RoomId": "202",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "false",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "203",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access"
+            ],
+            "price": 15000,
+            "isBooked": "false",
+            "RoomName": "Suite"
+        },
+        {
+            "RoomId": "204",
+            "numberOfSeats": 50,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "true",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "205",
+            "numberOfSeats": 150,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access",
+                "Swimming Pool"
+            ],
+            "price": 20000,
+            "isBooked": "true",
+            "RoomName": "Western Suite"
+        }
+    ]
+}
+
+End point 2:
+http://localhost:9000/roomlist/create/
+
+Result : 
+{
+    "message": "room created",
+    "data": [
+        {
+            "RoomId": "202",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "false",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "203",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access"
+            ],
+            "price": 15000,
+            "isBooked": "false",
+            "RoomName": "Suite"
+        },
+        {
+            "RoomId": "204",
+            "numberOfSeats": 50,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "true",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "205",
+            "numberOfSeats": 150,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access",
+                "Swimming Pool"
+            ],
+            "price": 20000,
+            "isBooked": "true",
+            "RoomName": "Western Suite"
+        },
+        {}
+    ],
+    "added": [
+        {
+            "RoomId": "202",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "false",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "203",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access"
+            ],
+            "price": 15000,
+            "isBooked": "false",
+            "RoomName": "Suite"
+        },
+        {
+            "RoomId": "204",
+            "numberOfSeats": 50,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "true",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "205",
+            "numberOfSeats": 150,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access",
+                "Swimming Pool"
+            ],
+            "price": 20000,
+            "isBooked": "true",
+            "RoomName": "Western Suite"
+        },
+        {}
+    ]
+}
+
+End Point 3:
+http://localhost:9000/booking/all
+
+Result: 
+{
+    "BookingList": [
+        {
+            "bookingID": "Block1",
+            "roomID": "202",
+            "customer": "Prakash",
+            "bookingDate": "10/10/2023",
+            "startTime": "12noon",
+            "endTime": "11:59am",
+            "status": "expired",
+            "booked_On": "1/09/2023"
+        },
+        {
+            "bookingID": "Block2",
+            "roomID": "202",
+            "customer": "Gunasekaran",
+            "bookingDate": "10/10/2023",
+            "startTime": "12noon",
+            "endTime": "11:59am",
+            "status": "AlreadyBooked",
+            "booked_On": "1/10/2023"
+        },
+        {
+            "bookingID": "Block3",
+            "roomID": "202",
+            "customer": "Adi Gunasekaran",
+            "bookingDate": "10/10/2023",
+            "startTime": "12noon",
+            "endTime": "11:59am",
+            "status": "Newbooking",
+            "booked_On": "1/10/2023"
+        },
+        {
+            "bookingID": "val4",
+            "roomID": ":RoomId",
+            "customer": "Adi Gunasekaran",
+            "bookingDate": "10/10/2023",
+            "startTime": "12noon",
+            "endTime": "121:59am",
+            "status": "BookingDone",
+            "booked_On": "10/15/2023"
+        }
+    ]
+}
+
+End point 4:
+http://localhost:9000/booking/create/:RoomId
+
+Result : 
+ {
+        "bookingID": "Block3",
+        "roomID": "525",
+        "customer": "Adi ",
+        "bookingDate": "10/10/2023",
+        "startTime": "12noon",
+        "endTime": "121:59am",
+        "status": "Newbooking",
+        "booked_On": "10/10/2023"
+    }
+
+    {
+    "message": "Room already booked for this date and time."
+}
+
+End Point 5:
+http://localhost:9000/booking/customer/:customer
+
+Result : 
+{
+    "TotalBooking": {
+        "customerName": [
+            "Prakash",
+            "Gunasekaran",
+            "Adi Gunasekaran"
+        ],
+        "totalBookings": 0,
+        "bookings": []
+    }
+}

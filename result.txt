@@ -1,0 +1,172 @@
+http://localhost:9000/roomlist/all
+
+{
+    "data": [
+        {
+            "RoomId": "202",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "false",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "203",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access"
+            ],
+            "price": 15000,
+            "isBooked": "false",
+            "RoomName": "Suite"
+        },
+        {
+            "RoomId": "204",
+            "numberOfSeats": 50,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "booked",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "205",
+            "numberOfSeats": 150,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access",
+                "Swimming Pool"
+            ],
+            "price": 20000,
+            "isBooked": "booked",
+            "RoomName": "Western Suite"
+        }
+    ]
+}
+
+
+
+http://localhost:9000/roomlist/create?roomID=210
+{
+    "message": "room created",
+    "data": [
+        {
+            "RoomId": "202",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "false",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "203",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access"
+            ],
+            "price": 15000,
+            "isBooked": "false",
+            "RoomName": "Suite"
+        },
+        {
+            "RoomId": "204",
+            "numberOfSeats": 50,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "booked",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "205",
+            "numberOfSeats": 150,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access",
+                "Swimming Pool"
+            ],
+            "price": 20000,
+            "isBooked": "booked",
+            "RoomName": "Western Suite"
+        },
+        {}
+    ],
+    "added": [
+        {
+            "RoomId": "202",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "false",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "203",
+            "numberOfSeats": 100,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access"
+            ],
+            "price": 15000,
+            "isBooked": "false",
+            "RoomName": "Suite"
+        },
+        {
+            "RoomId": "204",
+            "numberOfSeats": 50,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv"
+            ],
+            "price": 5000,
+            "isBooked": "booked",
+            "RoomName": "Duplex"
+        },
+        {
+            "RoomId": "205",
+            "numberOfSeats": 150,
+            "amenities": [
+                "Ac",
+                "Teapoy",
+                "Tv",
+                "Gym Access",
+                "Swimming Pool"
+            ],
+            "price": 20000,
+            "isBooked": "booked",
+            "RoomName": "Western Suite"
+        },
+        {}
+    ]
+}
